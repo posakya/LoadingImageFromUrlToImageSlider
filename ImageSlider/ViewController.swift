@@ -19,13 +19,14 @@ class ViewController: UIViewController {
     
     var jsonDatas = [jsonData]()
     
-   var iconArray = [UIImage]()
+//   var iconArray = [UIImage]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.frame = view.frame
-        iconArray = [UIImage(named:"image1")!,UIImage(named:"image2")!,UIImage(named:"image4")!,UIImage(named:"image3")!]
+        
+       // iconArray = [UIImage(named:"image1")!,UIImage(named:"image2")!,UIImage(named:"image4")!,UIImage(named:"image3")!]
         
         
         
@@ -39,7 +40,6 @@ class ViewController: UIViewController {
 
             do {
 
-               // SetAnimation.forDataFetching.stopAnimation()
 
                 self.jsonDatas = try JSONDecoder().decode([jsonData].self, from: data!)
 
